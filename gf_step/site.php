@@ -49,77 +49,7 @@ class Gf_stepModuleSite extends WeModuleSite {
             }
         }
     }
-	
-
-    /*public function doWebShenhe()
-    {
-        //这个操作被定义用来呈现 管理中心导航菜单
-        global $_W, $_GPC;
-        $pindex = max(intval($_GPC['page']), 1);
-        $psize = 20;
-        $shenhe = pdo_getslice('hczhongzhuan_shenhe', array('uniacid' => $_W['uniacid']), array($pindex, $psize), $total, array(), '', array('sort desc'));
-        for ($i = 0; $i < count($shenhe); $i++) {
-            if ($shenhe[$i]['stact'] == 0) {
-                $shenhe[$i]['stact'] = '不显示';
-            } else {
-                $shenhe[$i]['stact'] = '显示';
-            }
-        }
-        $pager = pagination($total, $pindex, $psize);
-        include $this->template("shenhe");
-    }*/
-
-
-    public function doWebAddshenhe(){
-        global $_W, $_GPC;
-        //这个操作被定义用来呈现 管理中心导航菜单
-        if (!empty($_GPC['name'])) {
-            $data['name'] = $_GPC['name'];
-            $data['uniacid'] = $_W['uniacid'];
-            $data['sort'] = $_GPC['sort'];
-            $data['stact'] = $_GPC['stact'];
-            $data['img'] = $_GPC['img'];
-            $data['content'] = $_GPC['content'];
-            $data['time'] = date("Y-m-d");
-            pdo_insert('hczhongzhuan_shenhe', $data);
-        }
-        include $this->template("addshenhe");
-    }
-
-    
-    public function doWebEditshenhe(){
-        global $_W, $_GPC;
-        $id = $_GPC['id'];
-        if (!empty($_GPC['name'])) {
-            $data['name'] = $_GPC['name'];
-            $data['uniacid'] = $_W['uniacid'];
-            $data['sort'] = $_GPC['sort'];
-            $data['stact'] = $_GPC['stact'];
-            $data['img'] = $_GPC['img'];
-            $data['content'] = $_GPC['content'];
-            pdo_update('hczhongzhuan_shenhe', $data, array('id' => $id));
-        }
-        $shenhe = pdo_get('hczhongzhuan_shenhe', array('id' => $id));
-        include $this->template("editshenhe");
-    }
-
-    public function doWebDeleteshenhe(){
-        global $_W, $_GPC;
-        pdo_delete('hczhongzhuan_shenhe', array('id' => $_GPC['id']));
-        $pindex = max(intval($_GPC['page']), 1);
-        $psize = 20;
-        $shenhe = pdo_getslice('hczhongzhuan_shenhe', array('uniacid' => $_W['uniacid']), array($pindex, $psize), $total, array(), '', array('sort desc'));
-        for ($i = 0; $i < count($shenhe); $i++) {
-            if ($shenhe[$i]['stact'] == 0) {
-                $shenhe[$i]['stact'] = '不显示';
-            } else {
-                $shenhe[$i]['stact'] = '显示';
-            }
-        }
-        $pager = pagination($total, $pindex, $psize);
-        include $this->template("shenhe");
-    }
-
+	   
     //商品管理
     public function doWebGoods() {
         global $_W,$_GPC;
