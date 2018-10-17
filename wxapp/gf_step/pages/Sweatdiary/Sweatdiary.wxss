@@ -1,0 +1,167 @@
+.Sweatdiar_img {
+    width: 90%;
+    height: 900rpx;
+    box-shadow: #999 0px 0px 6px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20rpx;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+}
+
+.erjie {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 180rpx;
+    justify-content: space-between;
+    margin-top: 50rpx;
+}
+
+.erjie text {
+    color: #ae7cfa;
+    font-size: 26rpx;
+}
+
+.baocun {
+    width: 326rpx;
+    height: 74rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50rpx;
+    background: linear-gradient(#a100ff,#6485ff);
+    color: #ffffff;
+    font-size: 30rpx;
+}
+
+.daixhf {
+    width: 600rpx;
+    text-align: center;
+    line-height: 35rpx;
+    color: #999999;
+    font-size: 26rpx;
+}
+
+.zhengge {
+    width: 100%;
+    height: 100%;
+}
+
+.shanban {
+    position: relative;
+    width: 100%;
+    height: 772rpx;
+}
+
+.shanban_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.shanban_txt {
+    position: absolute;
+    color: #ffffff;
+    font-size: 27rpx;
+    top: 22rpx;
+    right: 22rpx;
+}
+
+.xia {
+    width: 100%;
+    padding: 0 15rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    height: 200rpx;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+}
+
+.xia image {
+    width: 121rpx;
+    height: 121rpx;
+    border-radius: 100%;
+}
+
+.xuahfb {
+    width: 79%;
+    height: 120rpx;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nich {
+    height: 63rpx;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 26rpx;
+    border-bottom: 2rpx solid #fff;
+}
+
+.jia {
+    color: #ffffff;
+    font-size: 36rpx;
+}
+
+.audh {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 23rpx;
+    height: 130rpx;
+    box-sizing: border-box;
+}
+
+.jiadf text {
+    color: #212121;
+    font-size: 22rpx;
+}
+
+.jiadf text:first-child {
+    color: #212121;
+    font-size: 52rpx;
+}
+
+.daghdba {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.budah {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 10rpx;
+}
+
+.budah text {
+    color: #999999;
+    font-size: 20rpx;
+}
+
+.budah text:first-child {
+    color: #232319;
+    font-size: 29rpx;
+    margin-bottom: 10rpx;
+}
+
+.cahv {
+    width: 115rpx;
+    height: 115rpx;
+    border-radius: 100%;
+}

@@ -1,0 +1,33 @@
+<import src="../../../wxParse/wxParse.wxml"></import>
+<view class="detail">
+    <swiper circular="{{circular}}" class="daxia">
+        <swiper-item wx:for="{{zhmng.goods_img}}">
+            <image class="slide-image" src="{{item}}"></image>
+        </swiper-item>
+    </swiper>
+    <view class="shpinsha" hidden="{{qity==1}}">
+        <text class="shanui">{{zhmng.goods_name}}</text>
+        <view class="shanui_two">
+            <view class="head_one">
+                <image src="../../resource/images/pao.png"></image>
+                <text>{{zhmng.price}}</text>
+            </view>
+            <text class="baoyi">{{zhmng.express}}                              剩余{{zhmng.inventory}}件</text>
+        </view>
+    </view>
+    <ad binderror="binderror" class="csadca" style="margin-bottom:20rpx;" unitId="{{setaa.adunit2}}" wx:if="{{setaa.adunit2}}"></ad>
+    <view class="wxParse">
+        <template is="wxParse" data="{{wxParseData:article.nodes}}"></template>
+    </view>
+	<view class="shpinsha">
+		<text class="shanui_desc">{{zhmng.goodsdesc}}</text>
+		<text class="shanui_desc">商家：{{zhmng.shopname}}</text>
+		<text class="shanui_desc">地址：{{zhmng.shopaddr}}</text>
+	</view>
+    <view class="dibu" wx:if="{{bnian==0&&shenhe!=0}}">
+        <button class="yaifd" openType="share">{{setaa.poortip}}</button>
+    </view>
+    <view class="dibu" wx:if="{{bnian==1&&index==1}}">
+        <view bindtap="dui" class="yaifd">{{hua}}</view>
+    </view>
+</view>

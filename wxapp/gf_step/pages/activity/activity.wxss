@@ -1,0 +1,241 @@
+.activity {
+    width: 100%;
+    height: 100%;
+}
+
+.activity_one {
+    width: 100%;
+    height: 600rpx;
+    position: relative;
+}
+
+.tifh {
+    width: 100%;
+    /*height: 100%;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.avgdsaijd {
+    position: absolute;
+    bottom: 30rpx;
+    width: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.casvsa {
+    width: 400rpx;
+    height: 70rpx;
+    border-radius: 50rpx;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.casvsa image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.casvsa text {
+    color: #ffffff;
+    z-index: 2;
+    font-size: 30rpx;
+}
+
+.tifh_two {
+    width: 100%;
+    height: 100%;
+    padding: 40rpx 0;
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.laibaiozi {
+    width: 100%;
+    height: 346rpx;
+}
+
+.yioaj {
+    width: 400rpx;
+    height: 70rpx;
+    border-radius: 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 35rpx;
+    left: 38%;
+}
+
+.kaih {
+    width: 400rpx;
+    height: 70rpx;
+    background: linear-gradient(to right,#5302c3,#e60d4f);
+    border-radius: 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 30rpx;
+    border: 2rpx solid #fff;
+    position: absolute;
+    bottom: 46rpx;
+}
+
+.shika {
+    color: #ffffff;
+    font-size: 32rpx;
+}
+
+.listd {
+    width: 100%;
+    padding: 20rpx;
+    box-sizing: border-box;
+    background: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.danhu {
+    /*height: 569rpx;*/
+    width: 48.9%;
+    background: #fff;
+    box-shadow: #e2dbdb 0px 0px 5px;
+    border-radius: 5rpx;
+    margin-bottom: 20rpx;
+}
+
+.ware {
+    width: 100%;
+    padding: 10rpx;
+    box-sizing: border-box;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 486rpx;
+}
+
+.head_one {
+    display: flex;
+    align-items: center;
+}
+
+.head_two {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50rpx;
+    left: 50rpx;
+}
+
+.head_one image {
+    height: 40rpx;
+    width: 40rpx;
+    margin-right: 12rpx;
+}
+
+.head_one text {
+    color: #ffa900;
+    font-size: 30rpx;
+}
+
+.head_two image {
+    height: 40rpx;
+    width: 40rpx;
+    margin-right: 12rpx;
+}
+
+.head_two text {
+    color: #ffa900;
+    font-size: 30rpx;
+}
+
+.tucda {
+    width: 100%;
+    height: 329rpx;
+}
+
+.shangf {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    width: 100%;
+    color: #3a3a3a;
+    font-size: 25rpx;
+}
+
+.hsudui {
+    color: #9a9a9a;
+    font-size: 20rpx;
+}
+
+.head_one,.head_two {
+    display: flex;
+    align-items: center;
+}
+
+.head_one image {
+    height: 40rpx;
+    width: 40rpx;
+    margin-right: 12rpx;
+}
+
+.head_one text {
+    color: #ffa900;
+    font-size: 30rpx;
+}
+
+.qiusa {
+    height: 87rpx;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2rpx solid #e2e2e2;
+	display: none;
+}
+
+.qiusa image {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 16rpx;
+}
+
+.qiusa text {
+    color: #abbdff;
+    font-size: 25rpx;
+}
+
+.xsiavbds {
+    width: 100%;
+    height: 100%;
+}
+
+.imtyge {
+    width: 90%;
+    margin: 0 auto;
+    height: 300rpx;
+    border-radius: 15rpx;
+    display: block;
+    margin-top: 50rpx;
+}

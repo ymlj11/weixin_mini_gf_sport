@@ -1,0 +1,29 @@
+<view catchtouchmove="{{follow==1?'dabvsb':''}}" class="record">
+    <view class="record_toi">
+        <view class="ypuda">
+            <image class="imgyou" src="{{user.head_pic}}" wx:if="{{user.head_pic!=undefined}}"></image>
+            <image class="imgyou" src="../../resource/images/u=1044853994,2874938530&fm=27&gp=0.jpg" wx:if="{{user.head_pic==undefined}}"></image>
+            <view class="nihdid">
+                <text class="nichwenA" wx:if="{{user.nick_name!=undefined}}">{{user.nick_name}}</text>
+                <text class="nichwenA" wx:if="{{user.nick_name==undefined}}">没有名字哦~</text>
+				<text class="das">{{setaa.coinname}}：{{user.money}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="duihujilu">
+        <view bindtap="duiahua" class="dui">好友排行榜</view>
+		<view wx:for="{{sonlist}}">
+            <button class="kuoddaa" hoverClass="none">
+                <view class="diau bordbott" >
+                    <view class="xiao">
+                        <image src="{{item.head_pic}}"></image>
+                        <text>{{item.nick_name}}</text>
+                    </view>
+					<view class="xiao">
+						<text>{{item.money}}</text>
+					</view>
+                </view>
+            </button>
+		</view>
+    </view>
+</view>

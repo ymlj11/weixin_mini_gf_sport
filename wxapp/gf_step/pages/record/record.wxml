@@ -1,0 +1,110 @@
+<view catchtouchmove="{{follow==1?'dabvsb':''}}" class="record" wx:if="{{sh_en==0}}">
+    <view class="record_toi">
+        <view class="ypuda">
+            <image class="imgyou" src="{{user.head_pic}}" wx:if="{{user.head_pic!=undefined}}"></image>
+            <image class="imgyou" src="../../resource/images/u=1044853994,2874938530&fm=27&gp=0.jpg" wx:if="{{user.head_pic==undefined}}"></image>
+            <view class="nihdid">
+                <text class="nichwenA" wx:if="{{user.nick_name!=undefined}}">{{user.nick_name}}</text>
+                <text class="nichwenA" wx:if="{{user.nick_name==undefined}}">没有名字哦~</text>
+                <text class="das">ID:{{user.stepid}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="duihujilu">
+        <text class="yafbi">{{user.money}}</text>
+        <text class="raoljk">{{setaa.coinname}}</text>
+        <view bindtap="duiahua" class="dui">兑换记录</view>
+    </view>
+    <view class="duihujilu_two">
+        <form bindsubmit="submitIncodex" class="diau bordbott" reportSubmit="true" wx:if="{{shenhe!=0}}">
+            <button class="kuoddaa" formType="submit" hoverClass="none">
+                <view class="diau bordbott" wx:if="{{shenhe!=0}}">
+                    <view class="xiao">
+                        <image src="../../resource/images/xb.png"></image>
+                        <text>规则说明</text>
+                    </view>
+                    <image class="xoafj" src="../../resource/images/xiang.png"></image>
+                </view>
+            </button>
+        </form>
+        <form bindsubmit="submitInsearch" bindtap="trouble" class="diau bordbott" reportSubmit="true">
+            <button class="kuoddaa" formType="submit" hoverClass="none">
+                <view class="diau bordbott">
+                    <view class="xiao">
+                        <image src="../../resource/images/xc.png"></image>
+                        <text>常见问题</text>
+                    </view>
+                    <image class="xoafj" src="../../resource/images/xiang.png"></image>
+                </view>
+            </button>
+        </form>
+        <form bindsubmit="submitInsearch" bindtap="news" class="diau bordbott" reportSubmit="true">
+            <button class="kuoddaa" formType="submit" hoverClass="none">
+                <view bindtap="news" class="diau bordbott">
+                    <view class="xiao">
+                        <image src="../../resource/images/xd.png"></image>
+                        <text>消息通知</text>
+                    </view>
+                    <image class="xoafj" src="../../resource/images/xiang.png"></image>
+                </view>
+            </button>
+        </form>
+        <form bindsubmit="submitInsearch" bindtap="guanzhu" class="diau bordbott" reportSubmit="true" wx:if="{{setaa.is_follow==1}}">
+            <button class="kuoddaa" formType="submit" hoverClass="none">
+                <view class="diau bordbott">
+                    <view class="xiao bordbott">
+                        <image src="../../resource/images/xe.png"></image>
+                        <text>联系我们</text>
+                    </view>
+                    <image class="xoafj" src="../../resource/images/xiang.png"></image>
+                </view>
+            </button>
+        </form>
+        <form bindsubmit="submitInsearch" bindtap="accredit" class="diau bordbott" reportSubmit="true">
+            <button class="kuoddaa" formType="submit" hoverClass="none">
+                <view bindtap="accredit" class="diau ">
+                    <view class="xiao">
+                        <image src="../../resource/images/xf.png"></image>
+                        <text>设置</text>
+                    </view>
+                    <image class="xoafj" src="../../resource/images/xiang.png"></image>
+                </view>
+            </button>
+        </form>
+    </view>
+    <view class="duihujilu_tsaawo">
+        <ad class="csadca" style="margin-bottom:20rpx;" unitId="{{setaa.adunit3}}" wx:if="{{setaa.adunit3}}"></ad>
+    </view>
+</view>
+<button bindtap="xiao" catchtouchmove="true" class="{{follow==0?'none':'guanzhu'}}" hoverClass="none" openType="contact">
+    <image src="{{setaa.kefupic}}"></image>
+</button>
+<view class="qitsa_two" wx:if="{{sh_en==1}}">
+    <view class="sacav">
+        <view class="qiyuzhong">
+            <image src="{{user.head_pic}}" wx:if="{{user.head_pic!=undefined}}"></image>
+            <image src="../../resource/images/u=1044853994,2874938530&fm=27&gp=0.jpg" wx:if="{{user.head_pic==undefined}}"></image>
+            <text wx:if="{{user.nick_name!=undefined}}">{{user.nick_name}}</text>
+            <text wx:if="{{user.nick_name==undefined}}">没有名字哦~</text>
+        </view>
+        <view class="bushi">
+            <view class="bushlist">
+                <text>今日步数</text>
+                <text>近30天总步数</text>
+                <text>近30天最高步数</text>
+            </view>
+            <view class="bushlist_two">
+                <text class="bushlist_two_green">{{bu.today}}</text>
+                <text class="bushlist_two_red">{{bu.count}}</text>
+                <text class="bushlist_two_buue">{{bu.max}}</text>
+            </view>
+        </view>
+        <view class="listr">
+            <view class="sah">我的30天运动记录</view>
+            <view class="sabf" wx:for="{{stepInfoList}}">
+                <text>{{item.step}}步</text>
+                <text>{{item.timestamp}}</text>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,8 @@
+<view class="quah">
+    <text>微信运动授权</text>
+    <view class="sdhaou">
+        <text class="shiay">授权微信运动才能读取每日运动步数，{{setaa.coinname}}</text>
+        <text class="yia" wx:if="{{shou==1}}">已授权</text>
+        <button bindtap="bindopensetting" class="qiayu" openType="openSetting" wx:if="{{shou==0}}">未授权</button>
+    </view>
+</view>

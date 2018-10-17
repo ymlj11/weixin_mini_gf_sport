@@ -1,0 +1,103 @@
+detail {
+    width: 100%;
+    height: 100%;
+}
+
+.daxia {
+    width: 100%;
+    height: 500rpx;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+}
+
+.shpinsha {
+    width: 100%;
+    /*height: 133rpx;*/
+    padding: 10rpx 22rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+	margin-bottom:25rpx;
+}
+
+.shanui {
+    color: #3a3a3a;
+    font-size: 30rpx;
+	padding: 10rpx 0;
+}
+.shanui_desc {
+    color: #3a3a3a;
+    font-size: 25rpx;
+	padding:10rpx 0;
+}
+
+.csadca {
+    width: 626rpx;
+    height: 218rpx;
+    margin: 0 auto;
+    display: block;
+}
+
+.shanui_two {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head_one {
+    display: flex;
+    align-items: center;
+}
+
+.head_one image {
+    width: 33rpx;
+    height: 33rpx;
+    margin-right: 15rpx;
+}
+
+.head_one text {
+    color: #ffa900;
+    font-size: 27rpx;
+}
+
+.baoyi {
+    color: #9a9a9a;
+    font-size: 25rpx;
+}
+
+.yaifd {
+    width: 90%;
+    margin: 0 auto;
+    height: 80rpx;
+	/*position: fixed;*/
+    bottom: 30rpx;
+    left: 5%;
+    border-radius: 50rpx;
+    background: #838e73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 30rpx;
+    background: linear-gradient(#a100ff,#6485ff);
+}
+
+.dibu {
+    width: 100%;
+    height: 110rpx;
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    left: 0;
+    /*display: flex;*/
+    align-items: center;
+    background: #fff;
+}
+
+.wxParse {
+    /*margin-bottom: 110rpx;*/
+}

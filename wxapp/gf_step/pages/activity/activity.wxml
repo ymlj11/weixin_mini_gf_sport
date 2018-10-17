@@ -1,0 +1,36 @@
+<view class="activity" wx:if="{{sh_en==0}}">
+    <view class="activity_one">
+        <image class="tifh" src="{{setaa.boxpic}}" wx:if="{{setaa.boxpic}}"></image>
+        <view class="avgdsaijd">
+            <view bindtap="Lotto" class="casvsa">
+                <image src="../../resource/images/avds.png"></image>
+                <text>{{setaa.boxprice}}{{setaa.coinname}}打开宝箱</text>
+            </view>
+        </view>
+        <view class="tifh_two"></view>
+        <view class="head_two">
+            <image src="../../resource/images/pao.png"></image>
+            <text>{{user.money}}</text>
+        </view>
+    </view>
+    <view class="listd">
+        <view class="danhu" data-id="{{item.id}}" wx:for="{{goods}}">
+            <view class="ware">
+                <image class="tucda" src="{{item.main_img}}"></image>
+                <text class="shangf">{{item.goods_name}}</text>
+                <view class="head_one">
+                    <image src="../../resource/images/pao.png"></image>
+                    <text>{{item.price}}</text>
+                </view>
+            </view>
+            <view class="qiusa">
+                <image src="../../resource/images/jiang.png"></image>
+                <text>奖品详情</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="xsiavbds" wx:if="{{sh_en==1}}">
+    <image class="imtyge" src="{{setaa.no}}"></image>
+    <image class="imtyge" src="{{setaa.no2}}"></image>
+</view>

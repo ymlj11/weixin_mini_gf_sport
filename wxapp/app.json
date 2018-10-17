@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "gf_step/pages/index/index",
+        "gf_step/pages/rich/rich",
+        "gf_step/pages/back/back",
+        "gf_step/pages/challenge/challenge",
+        "gf_step/pages/detail/detail",
+        "gf_step/pages/guang/guang",
+        "gf_step/pages/Defiance/Defiance",
+        "gf_step/pages/shou/shou",
+        "gf_step/pages/news/news",
+        "gf_step/pages/codex/codex",
+        "gf_step/pages/trouble/trouble",
+        "gf_step/pages/accredit/accredit",
+        "gf_step/pages/Sweatdiary/Sweatdiary",
+        "gf_step/pages/register/register",
+        "gf_step/pages/inviter/inviter",
+        "gf_step/pages/conversion/conversion",
+        "gf_step/pages/record/record",
+        "gf_step/pages/activity/activity",
+        "gf_step/pages/soso/soso"
+    ],
+    "window": {
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+		"selectedColor": "#6aa84f",
+        "list": [
+            {
+                "pagePath": "gf_step/pages/index/index",
+                "text": "首页",
+                "iconPath": "gf_step/resource/images/11.png",
+                "selectedIconPath": "gf_step/resource/images/1_green.png"
+            },
+            {
+                "pagePath": "gf_step/pages/Defiance/Defiance",
+                "text": "我要挑战",
+                "iconPath": "gf_step/resource/images/44.png",
+                "selectedIconPath": "gf_step/resource/images/4_green.png"
+            },
+            {
+                "pagePath": "gf_step/pages/record/record",
+                "text": "我的",
+                "iconPath": "gf_step/resource/images/33.png",
+                "selectedIconPath": "gf_step/resource/images/3_green.png"
+            }
+        ]
+    }
+}
